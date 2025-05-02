@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: green;
+    height: 20vh;
+    color: aliceblue;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(7, 4, 4);
+    margin-top: 2%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+h2{
+    margin-left: 20%;
+    color: blue;
+}
+.tablecontainer{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(228, 227, 227);
+    text-align: center;
+    margin-top: 5%;
+    /* box-sizing: border-box; */
+    padding-bottom: 20px;
+}
+.table{
+    background-color: rgb(233, 235, 235);
+    border-collapse: collapse;
+    margin-left: 20%;
+    margin-right: 20%;
+}
