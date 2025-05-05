@@ -18,20 +18,24 @@ nav{
     gap: 20px;
 }
 h2{
-    margin-left: 20%;
+    /* margin-left: 20%; */
     color: blue;
 }
-.tablecontainer{
+.main{
+    padding-top: 3%;
+    background-color: rgb(240, 241, 241);
+}
+.tablecontainer, .mid{
+    background-color: rgb(217, 225, 233);
     margin-left: 20%;
     margin-right: 20%;
-    background-color: rgb(228, 227, 227);
     text-align: center;
     margin-top: 5%;
     /* box-sizing: border-box; */
     padding-bottom: 20px;
 }
 .table{
-    background-color: rgb(233, 235, 235);
+    background-color: rgb(228, 227, 227);
     border-collapse: collapse;
     margin-left: 20%;
     margin-right: 20%;

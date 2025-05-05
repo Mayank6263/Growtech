@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: rgb(13, 13, 143);
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+}
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    padding: 3% 0 5% 0;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(13, 13, 143);
+
+    /* overlay: hidden; */
+}  
+  .navLinks {
+      display: flex;
+      color: white;
+      list-style: none;
+      gap: 80px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .navLinks:hover {
+      font-weight: bold;
+  
+  }
+  
+  .navBtn {
+      width: 180px;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-radius: 20px;
+      border: none;
+  }
+  
+  .navBtn:hover {
+    background: linear-gradient(to bottom, #FDD301, #F47E20);
+    }
+  .body1{
+    display: flex;
+    position: relative;
+    padding-top: 20%;
+    
+  }
+  .body1-content{
+    font-size: xx-large;
+    color: aliceblue;
+    margin: 4% 0 0 5%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .circle{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(to bottom, #FDD301, #F47E20);    position: absolute;
+    border-radius: 50%;
+    left: 52%;
+    top: 30%;
+  }
+  .girlsimage{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    right: 10%;
+    height: 475px;
+    width: 650px;
+  }
+.sec2-head{
+  color: rgb(13, 13, 143);
+  font-size: 45px;
+  margin-top: 8%;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 6%;
+}
+
+.pillars{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.body3{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(13, 13, 143);
+}
+.body3-content{
+    position: relative;
+    text-align: center;
+    bottom: 70%;
+}
+.body4{
+    height: 100vh;
+    color: rgb(13, 13, 143);
+}
+.iso{
+    border: 1px solid rgb(13, 13, 143); 
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    margin: 0 0 20% 40% ;
+}
+.image-cards{
+    display: flex;
+    gap: 3%;
+    margin-left: 25%;
+    position: relative;
+}
+.body5{
+    background-color: rgb(242, 245, 248);
+    margin: 60% 0 0 0;
+    padding-bottom: 15%;
+    position: relative;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    /* row-gap: 1px; */
+    /* gap: 5px; */
+    gap: 10px;
+}
+/* .banks{
+    height: 40px;
+    width: 50px;
+    display: flex;
+    gap: 10px;
+} */
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding: 20px 0;
+  }
+  
+  .banks {
+    display: flex;
+    gap: 50px;
+    /* animation: scroll 30s linear infinite; */
+    /* width: max-content; */
+  }
+  
+  .banks img {
+    height: 30px; 
+    /* object-fit: contain; */
+  }
+  
+  .body6{
+    color: rgb(13, 13, 143);
+    background-color: rgb(242, 245, 248); 
+  }
+
+  /* @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+   */
+  .body6{
+    padding: 8%;
+    /* display: flex; */
+  }
+
+.card{
+    background-color: white;
+    height: 450px;
+    width: 650px;
+    border-radius: 20px;
+    margin: 0 0 10px 30px;
+}
+.card-bottom{
+    background-color: rgb(13, 13, 143);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.body7{
+    color: rgb(13, 13, 143);
+}
+.blog{
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0 10% 0;
+}
+.footer{
+    background-color: rgb(242, 245, 248); 
+    display: flex;
+    padding: 50px;
+    
+}
+td{
+  padding: 10px;
+}
+
+.table-head{
+  padding: 10px;
+  margin-right: 20px;
+}
