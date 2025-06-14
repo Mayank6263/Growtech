@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .Container {
+      width: 100%;
+      background-color: rgb(77, 41, 111);
+      padding-top: 10%;
+      height: 100vh;
+  }
+  
+  .white-container {
+      width: 30%;
+      height: 250px;
+      background-color: white;
+      margin: 0 auto;
+      border-radius: 1em;
+      
+  }

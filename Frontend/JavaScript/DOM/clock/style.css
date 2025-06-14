@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("cat-silhouette-overlooking-cityscape-night.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+    color: aliceblue;
+    text-align: center;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* align-items: center; */
+    position: relative;
+    border: 10px solid rgb(165, 172, 179);
+    box-shadow: 10px 10px 10px 5px rgb(66, 69, 70);
+}
+
+.center {
+    width: 8px;
+    height: 8px;
+    background-color: wheat;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.circle:hover{
+    transform: scale(0.9);
+}
+
+.numbers {
+    color: aliceblue;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform:
+      rotate(calc(30deg * (var(--i) - 3)))
+      translate(105px)
+      rotate(calc(-30deg * (var(--i) - 3)));
+    transform-origin: bottom;
+    font-size: 20px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.hour {
+    background-color: rgb(117, 12, 12);
+    height: 50px;
+    width: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 12px;
+    transform-origin: bottom;
+    z-index: 5;
+}
+
+.minute {
+    background-color: rgb(30, 149, 196);
+    height: 80px;
+    width: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 12px;
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.sec {
+    background-color: rgb(30, 196, 44);
+    height: 100px;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom;
+    border-radius: 12px;
+    z-index: 1;
+    /* transform: rotate(36deg); */
+}

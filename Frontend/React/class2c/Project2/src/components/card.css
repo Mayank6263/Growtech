@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cntainer{
+    width: 100%;
+    background-color: #302c2c;
+}
+.app-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-item: center;
+    justify-content: center;
+
+}
+
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    background-color: #787e7e;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin: 1rem 0 0.5rem;
+        font-size: 1.5rem;
+        color: #302c2c;
+    }
+
+    h4 {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #302c2c;
+    }
+
+    p {
+        margin: 0 0 1rem;
+        font-size: 0.9rem;
+        color: #302c2c;
+    }
+}

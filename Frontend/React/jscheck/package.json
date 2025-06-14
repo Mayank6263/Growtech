@@ -1,0 +1,7 @@
+{
+//    keep this empty in order to use require 
+
+
+//use this to use import export
+    "type": "module"
+  }

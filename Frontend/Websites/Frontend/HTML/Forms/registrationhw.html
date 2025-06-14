@@ -1,0 +1,142 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body class="body">
+    <form class="form">
+            <h1 style="text-align: center;">Student Registration Form</h1>
+            <div>
+                <label for="fname"  class="label">First Name :</label>
+                <input type="text" class="input"  placeholder="First Name" id="fname" style="margin-left: 23px;">(max 30 characters a-z and A-Z)   
+            </div>
+            <br>
+            <div>
+                <label for="lname" class="label">Last Name :</label>
+                <input type="text" class="input" placeholder="Last Name" style="margin-left: 23px;">(max 30 characters a-z and A-Z)
+            </div>
+            <br>
+            <div>
+                <label class="label" for="dob">Date of Birth :</label>
+                <input type="date" class="input" style="margin-left: 10px;" placeholder="Day">
+            </div>
+            <br>
+            <div>
+                <label class="label" for="mobile">Mobile no. :</label>+91
+                <input type="tel" class="input"  id="Mobile" >(10 digit number)
+            </div>
+            <br>
+            <div>
+                <label class="label" for="gender">Gender : </label>
+                <input type="radio" name="gender" style="margin-left: 45px;" >
+                <label class="label"  for="male">Male</label>
+                <input type="radio" name="gender" >
+                <label class="label" for="female">Female</label>
+            </div>
+            <br>
+            <div>
+                <label class="label" for="address">Address : </label>
+                <textarea style="margin-left: 40px;" cols="25" rows="6"></textarea>
+            </div>
+            <br>
+            <div>
+                <label class="label" for="City">City : </label>
+                <input type="text" style="margin-left: 70px;">(max 30 characters a-z and A-Z)        
+            </div>
+            <br>
+            <div>
+                <label class="label" for="pin">PIN CODE </label>
+                <input type="number" style="margin-left: 30px;" >(6 digit number)
+            </div>
+            <br>
+            <div>
+                <label for="state" class="label">STATE</label>
+                <input type="text" style="margin-left: 60px">(max 30 characters a-z and A-Z)
+            </div>
+            <br>
+            <div>
+                <label for="country" class="label">COUNTRY</label>
+                <input type="text" value="INDIA" style="margin-left: 30px;">
+            </div>
+            <br>
+            <div>
+                <label for="hobies" class="label">HOBBIES :</label>
+                <input type="checkbox" style="margin-left: 25px;" >
+                <label  >Drawing</label>
+                <input type="checkbox">
+                <label >Singing</label>
+                <input type="checkbox">
+                <label >Dancing</label>
+                <input type="checkbox">
+                <label >Sketching</label>
+                <input  type="checkbox">
+                <label >Others </label><input type="text">
+            </div>
+            <br>
+            <div>
+                <label for="table"  style="margin: 30px 0px 0px 30px;">QUALIFICATION
+                    <table style="margin-left: 190px; margin-bottom: 35px;">
+                        <tr>
+                            <th>SI.NO.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>CLASS X</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>CLASS XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>GRADUATION</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>MASTERS</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>(10 CHARACTERS)</td>
+                            <td>(UPTO 2 decimal)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+            </div>
+            <br>
+            <div>
+                <label for="course" class="label">COURSES APPLIED FOR</label>
+                <label for="bca">BCA</label>
+                <input name="action" type="radio" id="bca">
+                <label for="bcom">B. Com</label>
+                <input name="action" type="radio" id="bcom">
+                <label for="bsc">B.Sc</label>
+                <input name="action" type="radio" id="bsc">
+                <label for="ba">B.A</label>
+                <input type="radio" name="action" id="ba"><br>
+            </div>
+            <br>
+            <button style="margin: 0px 0px 0px 300px; height: 25px;">Register</button>   
+            <button style="margin: -22px 0px 0px 400px;  height: 25px;">Reset</button>
+        </form>
+</body>
+</html>
