@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 function App(){
-  const [state,setState]=useEffect("fkjal");
+  const [state,setState]=useState("fkjal");
   function print(){
-    console.log("fjfljfj");
+    console.log(state);
     setState("jjjjjj");
   }
   useEffect(()=>{
