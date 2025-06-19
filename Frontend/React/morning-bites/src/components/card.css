@@ -14,7 +14,7 @@
 }
 .product-card {
     width: 250px;
-    height: 400px;
+    height: 450px;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
@@ -25,7 +25,7 @@
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 3px;
   }
   .product-card:hover {
     transform: scale(1.05);
@@ -66,9 +66,12 @@
   .addtocart{
     width: 200px;
     margin: 0 auto;
-    background-color: rgb(117, 187, 4);;
+    background-color: rgb(200, 219, 168);
     border-style: none;
     padding: 2px;
+  }
+  .addtocart:hover{
+    background-color: rgb(117, 187, 4);
   }
   .empty-cart{
 
@@ -86,3 +89,34 @@
     max-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   }
+  .button-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(200, 219, 168);    
+  }
+  .button-container:hover{
+    background-color: rgb(117, 187, 4);
+  }
+  .button-container p{
+    color: #191b1a;
+    font-weight: bold;
+  }
+  .button-container .p1,
+.button-container .p2 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+}
+
+.button-container .p1 {
+  background-color: greenyellow;
+  color: #191b1a;
+}
+
+.button-container .p2 {
+  background-color: red;
+  color: white;
+}

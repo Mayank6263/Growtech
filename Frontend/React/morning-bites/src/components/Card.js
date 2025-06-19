@@ -1,50 +1,20 @@
 import React, { useState } from "react";
 import "./card.css";
+import { useContext } from "react";
+import {mycontext} from "../context/Mycontext";
 
-
-const Card = ({data,cartItem, SetCartItem}) => {
-  const [track, settrack] = useState(true);
-  let [count, setcount]= useState(data?.quantity);
+const Card = ({data}) => {
+  const { 
+    AddToCart,
+    decreament,
+    increament,
+    track,
+    settrack,
+    cartItem
+  } = useContext(mycontext)
   const already = cartItem?.find((item)=>{
     return item?.id === data?.id;
   });
-  function increament(){
-    setcount(data.quantity++)
-  }
- 
-  function decreament(){
-    setcount(()=>{
-      if(data.quantity === 1){
-        removeFromCart(data.id);
-        return ;
-      }
-      return data.quantity--;
-      }
-    )
-  }
-  function removeFromCart(id){
-    const filterval = cartItem?.filter((it)=>{
-      return it.id !== id;
-    }
-    )
-    SetCartItem(filterval)
-    }
-  
-  
-  function AddToCart(data){
-    console.log("onclicking",data)
-      const clickit = cartItem?.some((item)=>{
-        return item?.id === data?.id
-      })
-      SetCartItem((old)=>{
-        if(clickit){
-          alert("already clicked")
-          return old
-        }
-        
-        return [...old,data];
-      })
-  }
   return (
     <div className="product-card">
       <img
@@ -102,14 +72,15 @@ const Card = ({data,cartItem, SetCartItem}) => {
       </div>
 
       {
-          already !== undefined?( <div className="button-container">
-            <p onClick={()=>{
-              increament()
-            }}>+</p>
-            <p>{already?.quantity}</p>
-             <p onClick={()=>{
-              decreament()
-            }}>-</p>
+          already !== undefined?( 
+          <div className="button-container">
+                <p className="p1" onClick={()=>{
+                  increament(data)
+                }}>+</p>
+                <p>{already?.quantity}</p>
+                <p className="p2" onClick={()=>{
+                  decreament(data)
+                }}>-</p>
           </div>
           )
        :

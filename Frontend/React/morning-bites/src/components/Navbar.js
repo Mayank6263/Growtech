@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 const Navbar = ({cartItem}) => {
-  console.log(cartItem.length);
+  
   return (
     <nav className="navbar">
       <ul className="nav-list-container">
