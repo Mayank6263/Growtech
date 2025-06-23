@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
-const Navbar = ({cartItem}) => {
-  
+import { mycontext } from "../context/Mycontext";
+const Navbar = () => {
+  const { CartItem } = useContext(mycontext);
   return (
     <nav className="navbar">
       <ul className="nav-list-container">
@@ -25,11 +26,8 @@ const Navbar = ({cartItem}) => {
         </div>
         <div className="Navbar-Cart">
           <li>
-            <NavLink to="/cart" className="active-link" >
-              Cart{
-                
-                                 cartItem?.length > 0 ? (<h1>{cartItem.length}</h1>) : ("") 
-                            }
+            <NavLink to="/cart" className="active-link">
+              Cart{CartItem?.length > 0 ? <h1>{CartItem?.length}</h1> : ""}
             </NavLink>
           </li>
         </div>
